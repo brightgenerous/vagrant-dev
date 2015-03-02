@@ -1,0 +1,5 @@
+.bundle/
+.vagrant/
+vendor/
+Gemfile.lock
+Berksfile.lock

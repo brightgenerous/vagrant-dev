@@ -1,0 +1,9 @@
+{
+  "id" : "vagrant",
+  "homesick_castles" : [
+    {
+      "name" : "dotfiles",
+      "source" : "https://github.com/brightgenerous/dotfiles"
+    }
+  ]
+}
