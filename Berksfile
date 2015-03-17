@@ -21,8 +21,6 @@ cookbook 'redisio'
 cookbook 'chef-redis-commander', git: 'https://github.com/brightgenerous/chef-redis-commander', branch: 'nodejs'
 
 cookbook 'java'
-cookbook 'solr', git: 'https://github.com/brightgenerous/chef-solr', branch: 'java-opts'
-cookbook 'elasticsearch'
 
 cookbook 'td-agent'
 cookbook 'td-agent-config', git: 'https://github.com/brightgenerous/td-agent-config'

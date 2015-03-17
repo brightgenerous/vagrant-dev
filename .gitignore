@@ -3,3 +3,4 @@
 vendor/
 Gemfile.lock
 Berksfile.lock
+cookbooks/*

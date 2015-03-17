@@ -35,8 +35,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         'mysql::server', 'mysql::client',
         'redisio', 'redisio::enable', 'chef-redis-commander',
         'java',
-        'solr',
-        'elasticsearch', 'elasticsearch::plugins',
         'td-agent-config',
         'zsh::chsh', 'screen', 'vim::source', 'neobundle', 'lv',
         'homesick::data_bag',
@@ -65,8 +63,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
           source: true
         },
         rbenv_install_rubies: {
-          global_version: '2.2.0',
-          gems: [ :bundler, :homesick, { rails: { version: '4.2.0' } } ]
+          global_version: '2.0.0-p353',
+          gems: [ :bundler, :homesick, { rails: { version: '4.0.2' } } ]
         },
         mysql: {
           version: '5.6',
@@ -83,24 +81,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         },
         java: {
           jdk_version: '7'
-        },
-        solr: {
-          version: '4.9.1',
-          port: '8983',
-          java_opts: {
-            xms: '128M',
-            xmx: '128M'
-          }
-        },
-        elasticsearch: {
-          version: '1.4.4',
-          http: { port: '9200' },
-          allocated_memory: '128m',
-          plugins: {
-           :'elasticsearch/elasticsearch-analysis-kuromoji' => {
-             version: '2.4.2'
-           }
-          }
         },
         td_agent: {
           version: '2.1.5',
